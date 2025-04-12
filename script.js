@@ -1,3 +1,7 @@
+// use strict validation
+"use strict";
+
+
 // Array to hold game names
 let gameTitles = [];
 
@@ -72,3 +76,28 @@ function CheckArrayLengths() {
         return false;
     }
 }
+
+
+// gametype on mouse over events
+let funGamesBtn = document.getElementsByClassName("gameType")[0]
+let appsBtn = document.getElementsByClassName("gameType")[1]
+let projectsBtn = document.getElementsByClassName("gameType")[2]
+
+funGamesBtn.addEventListener("mouseover", (event) => {
+    funGamesBtn.style.backgroundColor = "limegreen";
+})
+funGamesBtn.addEventListener("mouseout", (event) => {
+    funGamesBtn.style.backgroundColor = "aqua";
+})
+appsBtn.addEventListener("mouseover", (event) => {
+    appsBtn.style.backgroundColor = "limegreen";
+})
+appsBtn.addEventListener("mouseout", (event) => {
+    appsBtn.style.backgroundColor = "aqua";
+})
+projectsBtn.addEventListener("mouseover", (event) => {
+    projectsBtn.style.backgroundColor = "limegreen";
+})
+projectsBtn.addEventListener("mouseout", (event) => {
+    projectsBtn.style.backgroundColor = "aqua";
+})

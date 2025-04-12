@@ -4,6 +4,8 @@
  One for apps that ARE games
  Put these in a flex box
 
+ After that, have the games/apps appear underneath from all sections, however I have them load in
+
  Nav at the top: Home, About, and a link to Projects(things which took more effort and possibly information pages and github links to other projects)
 
  About: Github link, Major, maybe other stuff?
@@ -22,30 +24,61 @@
 </head>
 <body>
     <!-- Heading of Site -->
-    <h1 id="siteHead"><a href="index.html">Student Makes Games</a></h1>
+    <header id="siteHead" >
+        <a href="index.html">
+            Student Makes Games
+        </a>
+    </header>
     <!-- Navigation -->
     <nav id="siteNav">
-        <div class="centerText">
-            <a href="index.html">Home</a>&nbsp;
-            <a href="about.html">About Student</a>
+        <div >
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="apps.html">Apps</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
         </div> 
     </nav>
 
     <!-- Main content of home -->
     <main>
 
+        <!-- Types of apps section -->
+        <nav id="gameTypesContainer">
+            <h2>Find your Jam</h2>
+            <div>
+                <section class="gameType">
+                    <a href="games.html">
+                        <h3>Fun Games</h3>
+                    </a>
+                </section>
+                <section class="gameType">
+                    <a href="apps.html">
+                    <h3>Useful Apps</h3>
+                    </a>
+                </section>
+                <section class="gameType">
+                    <a href="projects.html">
+                    <h3>Bigger Projects</h3>
+                    </a>
+                </section>
+            </div>
+        </nav>
+
+        <hr>
+
         <!-- Game link tables/flexbox/whatever this turns into -->
         <div class="gamesContainer">
             <!-- Temporary divs to test on before automating with JS -->
             <div class="gameBox">Game 1</div>
-            <div>Game 2</div>
-            <div>Game 3</div>
-            <div>Game 4</div>
-            <div>Game 5</div>
-            <div>Game 6</div>
-            <div>Game 7</div>
-            <div>Game 8</div>
-            <div>Game 9</div>
+            <div class="gameBox">Game 2</div>
+            <div class="gameBox">Game 3</div>
+            <div class="gameBox">Game 4</div>
+            <div class="gameBox">Game 5</div>
+            <div class="gameBox">Game 6</div>
+            <div class="gameBox">Game 7</div>
+            <div class="gameBox">Game 8</div>
+            <div class="gameBox">Game 9</div>
         </div>
     </main>
     <!-- Site Foot -->
@@ -53,8 +86,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Student</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
+
         </nav>
     </footer>
     

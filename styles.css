@@ -7,31 +7,42 @@
 
 
 
+/* Set all elements to include margins and padding in width and height */
+* { box-sizing: border-box; }
+
+
+
 /* Styles for body */
 body {
-    background-color: #c7e79c;
+    background-color: #c7e79c;  /* Greenish background color */
+    margin: 0; /* Ensure all inside elements reach the edges of the screen */
+}
+
+/* Styles for the main */
+main {
+    background-color: pink;
+    min-height: 400px;
 }
 
 
 /* Styles for site heading */
 #siteHead {
-    margin-top: 0;
     background-color: #ffffff;
     width: 100%;
-    height: 50px;
-    /* position: absolute; /* be able to use the bottom, right, top, and left attributes */
-    top: 0;      /* Make the footer press to the bottom of the page */
-    left: 0; /* Make the footer press to the left of the page */
+    text-align: center;
+    padding: 40px 10px 40px 10px;
+    margin: 0;
 }
-#siteHead a, h1 {
+#siteHead a {
     text-decoration: none; /* remove underline from link */
     color: orange;
-    text-align: center;
+    font-size: 3em;
+    width: 100%;
 }    
 
 /* Styles for the footer */
 footer {
-    position: absolute; /* be able to use the bottom, right, top, and left attributes */
+    position:fixed; /* Like setting an absolute position, but it is still relative. Make footer at the bottom of the page. */
     width: 100%;
     bottom: 0;      /* Make the footer press to the bottom of the page */
     left: 0; /* Make the footer press to the left of the page */
@@ -46,40 +57,68 @@ footer {
     /* position: absolute */
     text-decoration: none; /* remove underline from link */
     color: purple;
-    
-    
+    margin: 10px;
 }
 #siteNav {
     background-color: tan;
     width: 100%;
     text-align: center;
-    height: 2em;
-    position: relative;
+    padding: 5px;
 }
 
 /* Styles for the Game Container */
 .gamesContainer {
     display: grid;
-    gap: 5px;
+    gap: 25px;
     grid-template-columns: 1fr 1fr 1fr;     /* Make each game take up 1/3 of the container width */
-
+    margin: 15px;
+    padding: 25px;
+    background-color: burlywood;
+    border: solid;
 }
 .gameBox {
     color: red;
     font-size: 20px;
+    background-color: lavender; 
+    border: solid black 1px;
+    padding: 3%;
 }
 
 
-/* Styles for classes to be used frequently */
-.centerText {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) /* Centers both vertically and horizontally */
+/* Styles for the game type link section */
+#gameTypesContainer div {
+    color: blue;
+    display: flex;
+    background-color: grey;
+    margin: auto;   
 }
 
+#gameTypesContainer h2 {
+    text-align: center;
+    margin: 0;
+    padding: .5em;
+}
 
-/* template */
+.gameType {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Keep them all on the same line */
+    padding: 5px;
+    background-color: aqua;
+    margin: 10px;
+    width: 33%;
+    border-radius: 20px;
+}
+
+.gameType a {
+    text-align: center;
+    text-decoration: none; /* remove underline from link */
+}
+.gameType a:link {color: darkblue}
+.gameType a:hover {color: darkblue}
+.gameType a:visited {color: darkblue}
+.gameType a:active {color: darkblue}
+
 
 /* template */
 
