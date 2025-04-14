@@ -8,14 +8,15 @@
 
 
 /* Set all elements to include margins and padding in width and height */
-* { box-sizing: border-box; }
+* { box-sizing: border-box;
+    margin: 0; /* Ensure all inside elements reach the edges of the screen */
+}
 
 
 
 /* Styles for body */
 body {
     background-color: #c7e79c;  /* Greenish background color */
-    margin: 0; /* Ensure all inside elements reach the edges of the screen */
 }
 
 /* Styles for the main */
@@ -42,11 +43,12 @@ main {
 
 /* Styles for the footer */
 footer {
-    position:fixed; /* Like setting an absolute position, but it is still relative. Make footer at the bottom of the page. */
+    position:relative; /* Like setting an absolute position, but it is still relative. Make footer at the bottom of the page. */
     width: 100%;
     bottom: 0;      /* Make the footer press to the bottom of the page */
     left: 0; /* Make the footer press to the left of the page */
     background-color: #ffffff;
+    padding: 25px;
 }
 
 
@@ -58,6 +60,7 @@ footer {
     text-decoration: none; /* remove underline from link */
     color: purple;
     margin: 10px;
+    font-size: 1.1em;
 }
 #siteNav {
     background-color: tan;
@@ -81,8 +84,12 @@ footer {
     font-size: 20px;
     background-color: lavender; 
     border: solid black 1px;
-    padding: 3%;
+    padding: 15px;
+    border-radius: 25px;
 }
+
+
+
 
 
 /* Styles for the game type link section */
@@ -103,11 +110,12 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; /* Keep them all on the same line */
-    padding: 5px;
+    padding: 15px;
     background-color: aqua;
     margin: 10px;
     width: 33%;
     border-radius: 20px;
+
 }
 
 .gameType a {
@@ -119,6 +127,25 @@ footer {
 .gameType a:visited {color: darkblue}
 .gameType a:active {color: darkblue}
 
+
+
+/* Blockquote */
+blockquote {
+    border-left: 2px solid #000;
+    margin: 1.5em 2em;
+    padding: 5px;
+    quotes: "\201C""\201D""\2018""\2019"; /* Not working. Copied from https://css-tricks.com/snippets/css/simple-and-nice/blockquote/styling/ Wrote the text and link freehand */
+}
+
+/* template */
+
+/* template */
+
+/* template */
+
+/* template */
+
+/* template */
 
 /* template */
 
