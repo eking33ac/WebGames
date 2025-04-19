@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Snake",
+        "cover": "cover1.png",
+        "page": "games/game1.html",
+        "description": "desc1"
+    },
+    {
+        "title": "game2",
+        "cover": "cover2.png",
+        "page": "anothergame.html",
+        "description": "desc2"
+    }
+]

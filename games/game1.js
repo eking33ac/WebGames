@@ -1,30 +1,28 @@
+// Make it save score to local storage
+// Add score tracker and saver
+// On reload, it goes to local storage and retrieves largest scores to display
+// Can change size of board
+
 "use strict";
 
 console.log("Linked.")
 
 // get container to hold the game
-let game = document.getElementById("gameContainer");
+const game = document.getElementById("gameContainer");
 
 // get grid to play the game in
-let field = document.getElementById("field")
+const field = new GridField("field");
+field.Create("div",0,game);
+
+// Create the snake
+let snake = new Snake("snakeBody")
+
+snake.Create("div", field.GridField);
 
 
-// create 100 divs to go inside the grid
-//create array to hold all blocks
-let blocks = [];
-// create blocks/tiles
-for (let i=0; i<100; i++) {
-    let block = document.createElement("div")
-    block.className = "block";
-    // add block to array
-    blocks.push(block);
-    // add block to the field
-    field.appendChild(block);
-    console.log("blocked");
-}
 
-console.log(blocks)
 
+/*
 // create the snake
 let snake = document.createElement("div")
 snake.id = "head"
@@ -32,15 +30,12 @@ snake.id = "head"
 // set snake in the start square
 blocks[45].className="snakeBlock";
 
-// add event listeners to use keypresses
 
 
-
-
-
-// Declare a variable to hold an emtpy function. When 
+// Declare a variable to hold an emtpy function. 
 let keyPresses = function() {}
 
+// add event listeners to use keypresses
 
 window.addEventListener('keydown', keyDownListener, false)
 
@@ -53,7 +48,7 @@ function keyDownListener(event) {   // AT SOME POINT, MY MOUSE PAD MOVED THE SQU
     // verification: console.log("key down")
     // verification: console.log(`Key ${event.key} was pressed.`)
 
-    // If the key pressed is
+    // If the key pressed
     if (event.key == 'w' || event.key == "ArrowUp") {
         let index = blocks.indexOf(document.getElementsByClassName("snakeBlock")[0])
         console.log(`index 1: ${index}`)
@@ -79,7 +74,7 @@ function keyDownListener(event) {   // AT SOME POINT, MY MOUSE PAD MOVED THE SQU
         index += 1
         blocks[index].className = "snakeBlock";
         console.log(`index 2: ${index}`)
-        console.log("Ran s/arrowright.")
+        console.log("Ran d/arrowright.")
     }
     else if (event.key == 'a' || event.key == "ArrowLeft") {
         let index = blocks.indexOf(document.getElementsByClassName("snakeBlock")[0])
@@ -88,12 +83,12 @@ function keyDownListener(event) {   // AT SOME POINT, MY MOUSE PAD MOVED THE SQU
         index -= 1
         blocks[index].className = "snakeBlock";
         console.log(`index 2: ${index}`)
-        console.log("Ran s/arrowleft.")
+        console.log("Ran a/arrowleft.")
     }
 }
 // Hear when key stops being pressed. Sets keyPresses to false.
 window.addEventListener('keyup', keyUpListener, false);
     function keyUpListener(event) {
     keyPresses[event.key] = false;
-    console.log("key up")
-}
+    //console.log("key up")
+} */

@@ -1,7 +1,79 @@
+// Create game field object
+// create snake object
+
 "use strict";
 
+// Create field class
+class GridField {
+    // constructor
+    constructor(id) {
+        // set id field
+        this.id=id;
+    }
+}
 
-//// Key press event listeners for game1/snake as of 3:32PM, 4/19/2025
+GridField.prototype.Create = function (elementType, nodeIndex = 0, appendToNode = document.body) {
+    // create the div element
+    this.GridField = document.createElement(elementType);
+    // give the grid this ID
+    this.GridField.id = this.id;
+    // set default size
+    this.SetSize(10,"block");
+    // append to the appendToNode
+
+    // if the element has no children
+    if (appendToNode.childElementCount == 0) {
+        // append without using children[nodeIndex]
+        appendToNode.appendChild(this.GridField);
+    }
+    // otherwise, append in correct location via nodeIndex
+    else {
+        appendToNode.children[nodeIndex].appendChild(this.GridField);
+    }
+}
+
+GridField.prototype.SetSize = function(sideLength, gridSquareClass) {
+    // if it has squares already, reset to 0
+
+
+    // square the side length to get the number of grid squares
+    const size = sideLength ** 2;
+    // make squares until it is the right size
+    for (let i=0; i<size; i++) {
+        // create new div to hold each square
+        let square = document.createElement("div")
+        // give the square the class name
+        square.className = gridSquareClass;
+        // add block to the grid
+        this.GridField.appendChild(square);
+        // verify
+        //console.log("blocked" + [i]);
+    }
+}
+
+
+
+class Snake {
+    constructor(className) {
+        this.className = className;
+    }
+}
+
+Snake.prototype.Create = function(elementType = "div", gridSnakeLivesIn) {
+    // create the snake block
+    this.Snake = document.createElement(elementType);
+    this.Snake.className = this.className;
+
+    // Find the 46th square (index 45)
+    const targetSquare = gridSnakeLivesIn.children[45];
+    if (targetSquare) {
+        targetSquare.appendChild(this.Snake);
+        console.log("appended snake");
+    } else {
+        console.error("Grid square 45 not found.");
+    }
+    this.AddMovementListeners(gridSnakeLivesIn);
+}
 
 Snake.prototype.AddMovementListeners = function(gridSnakeLivesIn) {
     const self = this; // capture the Snake instance
@@ -90,4 +162,24 @@ Snake.prototype.AddMovementListeners = function(gridSnakeLivesIn) {
         keyPresses[event.key] = false;
         //console.log("key up")
     }
-}
+
+
+
+
+
+    // functions to move in a direction
+    function snakeMoves() {
+        if (direction = "up") {
+            
+        }
+        if (direction = "down") {
+
+        }
+        if (direction = "left") {
+
+        }
+        if (direction = "right") {
+
+        }
+    }
+};

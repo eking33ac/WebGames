@@ -16,7 +16,6 @@ body {
     border: solid 5px;
     height: 300px;
     width: 300px;
-    
 }
 
 /* make the grid for the game to go in */
@@ -28,6 +27,7 @@ body {
     height: 250px;
     width: 250px;
     gap: 0;
+    background-color: blue;
 }
 
 .block {
@@ -38,9 +38,12 @@ body {
 
 /* Make the snake object */
 #head {
-    background-color: magenta;
+    background-color: darkmagenta;
 }
 
-.snakeBlock {
-    background-color: darkmagenta;
+.snakeBody {
+    background-color: magenta;
+    border: none;
+    height: 100%;
+    width: 100%;
 }
