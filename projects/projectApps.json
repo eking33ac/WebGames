@@ -1,0 +1,14 @@
+[
+    {
+        "title": "project1",
+        "cover": "cover1.png",
+        "page": "projects/project1.html",
+        "description": "desc1"
+    },
+    {
+        "title": "project2",
+        "cover": "cover2.png",
+        "page": "projects/project2.html",
+        "description": "desc2"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "title": "useApp1",
+        "cover": "cover1.png",
+        "page": "apps/app1.html",
+        "description": "desc1"
+    },
+    {
+        "title": "useApp2",
+        "cover": "cover2.png",
+        "page": "apps/app2.html",
+        "description": "desc2"
+    }
+]

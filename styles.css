@@ -9,6 +9,7 @@
 
 /* Set all elements to include margins and padding in width and height */
 * { box-sizing: border-box;
+    /* Maybe move margin to be 0 on just the header, nav, footer, and main */
     margin: 0; /* Ensure all inside elements reach the edges of the screen */
 }
 
@@ -23,6 +24,11 @@ body {
 main {
     background-color: pink;
     min-height: 400px;
+}
+
+/* Styles for paragraphs */
+p {
+    margin: 15px;
 }
 
 

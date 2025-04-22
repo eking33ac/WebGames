@@ -52,26 +52,33 @@ GridField.prototype.SetSize = function(sideLength, gridSquareClass) {
 }
 
 
-
+// create snake class
 class Snake {
+    // snake calss constructor
     constructor(className) {
+        // set snake class name
         this.className = className;
     }
 }
 
+// function to create the snake
 Snake.prototype.Create = function(elementType = "div", gridSnakeLivesIn) {
     // create the snake block
     this.Snake = document.createElement(elementType);
+    // set snake class name
     this.Snake.className = this.className;
 
     // Find the 46th square (index 45)
     const targetSquare = gridSnakeLivesIn.children[45];
+    // if the square is truthy
     if (targetSquare) {
+        // append the snake to the square. (change color of the square to indicate a square the snake is in)
         targetSquare.appendChild(this.Snake);
-        console.log("appended snake");
     } else {
+        // tell user the grid square wasn't found
         console.error("Grid square 45 not found.");
     }
+    // add movement listeners to the grid of the snake
     this.AddMovementListeners(gridSnakeLivesIn);
 }
 
@@ -82,6 +89,7 @@ Snake.prototype.AddMovementListeners = function(gridSnakeLivesIn) {
 
     let keyPresses = function() {}; // declare keypresses. ?
 
+    // add keydown event listener
     window.addEventListener('keydown', keyDownListener, false); // set an event listener on the whole window
 
     // create listener for when keys are pressed
@@ -97,7 +105,7 @@ Snake.prototype.AddMovementListeners = function(gridSnakeLivesIn) {
         // in case of error getting the index
         if (index === -1) {
             // display error in the console
-            console.error("Snake head not found in grid!");
+            console.error("Snake not found in grid!");
             // exit
             return;
         }
@@ -118,7 +126,7 @@ Snake.prototype.AddMovementListeners = function(gridSnakeLivesIn) {
         }
         // if the key pressed is S or the arrow down
         else if (event.key == 's' || event.key == "ArrowDown") {
-            // if the index can still move up a row
+            // if the index can still move down a row
             if (index <= 89) {
                 // select the new square
                 const newSquare = squares[index + 10];
@@ -131,7 +139,7 @@ Snake.prototype.AddMovementListeners = function(gridSnakeLivesIn) {
         }
         // if the key pressed is D or the arrow right
         else if (event.key == 'd' || event.key == "ArrowRight") {
-            // if the index can still move up a row
+            // if the index can still move over right a column
             if (!((index+1)%10 == 0)) {
                 // select the new square
                 const newSquare = squares[index + 1];
@@ -143,7 +151,7 @@ Snake.prototype.AddMovementListeners = function(gridSnakeLivesIn) {
             }
         }
         else if (event.key == 'a' || event.key == "ArrowLeft") {
-            // if the index can still move up a row
+            // if the index can still move over left a column
             if (!(index%10 == 0)) {
                 // select the new square
                 const newSquare = squares[index - 1];
@@ -164,10 +172,7 @@ Snake.prototype.AddMovementListeners = function(gridSnakeLivesIn) {
     }
 
 
-
-
-
-    // functions to move in a direction
+    // functions to move in a direction. Will replace the 'if' part of the if statements on keypress
     function snakeMoves() {
         if (direction = "up") {
             

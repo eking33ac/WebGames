@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="styles.css">
     <script src="objects.js" defer></script>
     <script src="script.js" defer></script>
-    
 </head>
 <body>
     <!-- Heading of Site -->
@@ -33,11 +32,12 @@
     </header>
     <!-- Navigation -->
     <nav id="siteNav">
-            <a href="index.html">Home</a>
-            <a href="games.html">Games</a>
-            <a href="apps.html">Apps</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
+        <!-- The tabs on this page adn the about make the navigation links further apart than on the games, apps, and projects pages -->
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="apps.html">Apps</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
     </nav>
 
     <!-- Main content of home -->
@@ -45,7 +45,6 @@
 
         <!-- Types of apps section -->
 
-        
         <nav id="gameTypesContainer">
             <h2>Find your Jam</h2>
             <div>
@@ -69,23 +68,17 @@
 
         <hr>    
 
-        <!-- Game link tables/flexbox/whatever this turns into -->
+        <!-- Game link grid -->
         <div class="gamesContainer">    
-            <!-- Temporary divs to test on before automating with JS -->
-    <!--
-            <div class="gameBox">Game 1</div>
-            <div class="gameBox">Game 2</div>
-            <div class="gameBox">Game 3</div>
-            <div class="gameBox">Game 4</div>
-            <div class="gameBox">Game 5</div>
-            <div class="gameBox">Game 6</div>
-            <div class="gameBox">Game 7</div>
-            <div class="gameBox">Game 8</div>
-            <div class="gameBox">Game 9</div>
+            <!-- Maybe make a sorting system with all app data in one json, and a type array. Each app could have 1-3 types, 
+                 to be sorted into apps(rename this; it is confusing), projects, and/or games. 
+                 That way, json has fewer files and less redundancy. And I get to make the sorting module/method/function. -->
         </div>
-    -->
-
+    
+        
     </main>
+    <!-- There is a gap here between the main and the foot. Fix. -->
+     
     <!-- Site Foot -->
     <footer>
         <nav>
@@ -93,7 +86,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
-
         </nav>
     </footer>
     
