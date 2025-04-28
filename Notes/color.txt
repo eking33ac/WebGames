@@ -1,0 +1,22 @@
+Basic Website colors:
+    - Background
+    - Text
+    - Primary
+    - Secondary
+    - Accent
+    - Error
+    - Succcess
+
+Design principals:
+Visual heigerarchy
+contrast
+balance/alignment
+consistency
+simplicity
+feedback option
+
+
+
+Color Schemes: Light and soft colors! Saturation is my friend. Good vibes.
+Orange, blue, purple. Baby and pale colors.
+Pale colors are COWARDLY on their own. DO HAVE SATURATION! Just be mindful. It is the accent.

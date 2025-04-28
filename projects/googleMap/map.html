@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrate Google Map</title>
+    <link rel="stylesheet" href="map.css">
+    <script src="map.js" defer></script>    <!-- Refer this first because it's initMap method is called by google V right there V -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyA4-a0-Cky31xCiqy6oty-oRzoZDxLqg&callback=initMap"></script> 
+</head>
+<body>
+    <!-- goal: Show users their current location! 
+         Display the user’s latitude, longitude, and altitude, with a label for each value. -->
+    <header><h1>Google Maps</h1></header>
+    <main>
+        <div id="mapWrap"></div>    <!-- Map of the path from user to Eiffel tower -->
+        <br>
+        <!-- Create labels for lat, long, and altitude here -->
+        <br>
+        <div id="routeBox"></div> <!-- Directions step by step from user's locat to the Eiffle tower -->
+    </main>
+</body>
+</html>

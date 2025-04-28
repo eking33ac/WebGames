@@ -10,6 +10,10 @@ console.log("Linked.")
 // get container to hold the game
 const game = document.getElementById("gameContainer");
 
+const title = document.createElement("h1");
+title.textContent = "snake"
+game.append(title)
+
 // get grid to play the game in
 const field = new GridField("field");
 field.Create("div",0,game);

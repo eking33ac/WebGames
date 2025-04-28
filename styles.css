@@ -1,30 +1,51 @@
-/* Absolute positioning in the header, footer, and nav
-   make it so they take up the full screen width
-   but they also make other elements overlap 
-   as though they weren't there. Need fix. 
-   Maybe Edge browser issue. 
-*/
-
-
-
 /* Set all elements to include margins and padding in width and height */
 * { box-sizing: border-box;
     /* Maybe move margin to be 0 on just the header, nav, footer, and main */
     margin: 0; /* Ensure all inside elements reach the edges of the screen */
 }
 
+/* Styles for a main content wrapper. Goal: Make it feel like a place rather than just a site This information exists *somewhere* */
+#aWrap {
+    margin: 20px; /* Adds space around and centers horizontally */
+    background-color: lightblue;
+    border-radius: 30px;           /* Rounded corners */
+    box-shadow: 0 0 15px rgb(141, 255, 141); 
+    overflow: hidden;              /* Prevents child elements from overflowing */
+}
 
+hr {
+    margin: 8px 0;
+    display: block;
+    border: 3px solid white;
+    width: 100%;
+}
+
+#midSect {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+#leftSect {
+    background-color: rgba(112, 187, 252, 0.2);
+}
+
+#rightSect {
+    background-color: rgba(185, 255, 179, 0.2);
+}
+
+#sectionGrid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1.5fr;
+}
 
 /* Styles for body */
 body {
-    background-color: #c7e79c;  /* Greenish background color */
+    background-color: darkslateblue;  /* void. Almost black */
 }
 
 /* Styles for the main */
-main {
+/* main {
     background-color: pink;
-    min-height: 400px;
-}
+} */
 
 /* Styles for paragraphs */
 p {
@@ -35,10 +56,16 @@ p {
 /* Styles for site heading */
 #siteHead {
     background-color: #ffffff;
-    width: 100%;
+    width: 95%;
     text-align: center;
     padding: 40px 10px 40px 10px;
-    margin: 0;
+    margin: 6px auto;
+    border: solid 5px;   
+    border-radius: 50px;
+    border-top: solid 10px blue;    /* Animate colors to cycle or change! */
+    border-bottom: solid green;
+    border-left: solid purple;
+    border-right: solid lightblue;
 }
 #siteHead a {
     text-decoration: none; /* remove underline from link */
@@ -53,7 +80,7 @@ footer {
     width: 100%;
     bottom: 0;      /* Make the footer press to the bottom of the page */
     left: 0; /* Make the footer press to the left of the page */
-    background-color: #ffffff;
+    background-color: greenyellow;
     padding: 25px;
 }
 
@@ -66,14 +93,32 @@ footer {
     text-decoration: none; /* remove underline from link */
     color: purple;
     margin: 10px;
+    padding: 10px 20px;
     font-size: 1.1em;
-}
-#siteNav {
     background-color: tan;
     width: 100%;
-    text-align: center;
-    padding: 5px;
+    display: inline-block; /* stack nicely on top of eachother */
+    padding-left: 1px;
+    border-top: solid 2px magenta;
+    border-bottom: solid 1px rgb(92, 11, 11);
+    border-left: solid 1px rgb(92, 11, 11);
+    border-right: solid 5px magenta;
+    border-radius: 5px 25px 15px 5px;
+    box-shadow: brown -3px 3px 5px;
 }
+#siteNav {
+    text-align: center;
+}
+#siteNav li {
+    margin-left: 10px;
+    list-style-type: none;
+    padding: 0px;
+    width: 80%;
+}
+#siteNav ul {
+    padding: 0; /* Get rid of the space left by the bullet points */
+}
+
 
 /* Styles for the Game Container */
 .gamesContainer {
@@ -99,20 +144,20 @@ footer {
 
 
 /* Styles for the game type link section */
-#gameTypesContainer div {
+#appTypesContainer div {
     color: blue;
     display: flex;
     background-color: grey;
     margin: auto;   
 }
 
-#gameTypesContainer h2 {
+#appTypesContainer h2 {
     text-align: center;
     margin: 0;
     padding: .5em;
 }
 
-.gameType {
+.appType {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; /* Keep them all on the same line */
@@ -121,18 +166,16 @@ footer {
     margin: 10px;
     width: 33%;
     border-radius: 20px;
-
 }
 
-.gameType a {
+.appType a {
     text-align: center;
     text-decoration: none; /* remove underline from link */
 }
-.gameType a:link {color: darkblue}
-.gameType a:hover {color: darkblue}
-.gameType a:visited {color: darkblue}
-.gameType a:active {color: darkblue}
-
+.appType a:link {color: darkblue}
+.appType a:hover {color: darkblue}
+.appType a:visited {color: darkblue}
+.appType a:active {color: darkblue}
 
 
 /* Blockquote */

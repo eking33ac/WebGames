@@ -1,0 +1,27 @@
+Sources: https://www.youtube.com/watch?v=wIuVvCuiJhU
+
+User Flow:
+Users using your application have certain expectations.
+Common questions:
+    Where can I find my cart?
+    Where can I learn more about this tool?
+    I wanna know if I can trust this site.
+    Where is the sign-up button?
+Users are looking for info, want to buy something, or just using the service.
+
+
+User Flow Diagram:
+Map out the main journey from the moment the user lands on the site until their goal is achieved.
+ E.g.
+    entry -> view products -> add to cart -> purchase -> success
+    landing -> learn how it works -> find category -> select category -> view design inspirations
+
+Wire Framing: 
+Create pages/screens for each step on the user flow diagram.
+Each page should contribute to the goal a user has when entering the site. (i.e. the purchase, finding their category, etc. Just before the success stage.)
+
+For a user shopping for something, there may be pages for: Store, product, cart, payment, and success/purchase
+Wireframes are the drawn layout for diffrent pages on the website, before any coding is acutally done.
+
+Design Categories:
+buttons, grids, scroll bars, links, drop down menus, loading animations, cursors, progress bars, toggle switches, etc.

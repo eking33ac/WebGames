@@ -1,0 +1,15 @@
+#mapWrap {
+    border: solid 2px green;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    padding: 0;
+}
+
+#routeBox {
+    border: solid 3px green;
+    height: fit-content;
+    width: 60%;
+    margin: auto;
+    padding: 3%;
+}

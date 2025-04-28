@@ -3,16 +3,16 @@
 
 // Be sure to put it inside an if-page-name-contains-index. Or make separate scripts for all.
 if (document.URL.includes("index.html")) {
-    // gametype on mouse over events
+    // appType on mouse over events
     // create variables to hold each game type link (button) on the home page.
-    let funGamesBtn = document.getElementsByClassName("gameType")[0]
-    let appsBtn = document.getElementsByClassName("gameType")[1]
-    let projectsBtn = document.getElementsByClassName("gameType")[2]
+    let funGamesBtn = document.getElementsByClassName("appType")[0]
+    let appsBtn = document.getElementsByClassName("appType")[1]
+    let projectsBtn = document.getElementsByClassName("appType")[2]
     // create array of all game type buttons
-    let gameTypeArr = [funGamesBtn, appsBtn, projectsBtn];
+    let appTypeArr = [funGamesBtn, appsBtn, projectsBtn];
 
     // for each game type button of the array
-    for (let button of gameTypeArr) {
+    for (let button of appTypeArr) {
         // add mouseover event listener to each button
         button.addEventListener("mouseover", (event) => {
             // changing the color on mouse over so it is more obvious they are buttons

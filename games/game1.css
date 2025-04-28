@@ -4,22 +4,21 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
+#pageBody {
     background-color: slategrey;
 }
-
-
-
 
 /* Make the id for the game container box */
 #gameContainer {
     border: solid 5px;
-    height: 300px;
-    width: 300px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    background-color: rgba(177, 219, 255, 0.492);
+    margin: auto;
 }
 
 /* make the grid for the game to go in */
-
 #field {
     display: grid;
     grid: auto / auto auto auto auto auto
@@ -34,7 +33,6 @@ body {
     border: solid 1px;
     background-color: lightgreen;
 }
-
 
 /* Make the snake object */
 #head {
