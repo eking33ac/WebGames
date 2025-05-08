@@ -10,5 +10,85 @@
 </head>
 <body>
     <!-- The B&B will be added here, too! -->
+
+    <div id="sectionGrid">
+        <!-- Navigation -->
+        <div id="leftSect">
+            <br><br><br><img src="noLogoYet.png" alt="THERE WILL BE A Lil Guy HERE!"><br><br><br>
+            <nav id="siteNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="apps.html">Tools</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    </ul>
+            </nav>
+        </div>
+        
+        <div id="rightSect">
+            <!-- Heading of Site -->
+            <header id="siteHead" >
+                <a href="index.html">
+                    Welcome to my site!
+                </a>
+            </header>
+            <h2>Projects!</h2>
+            <div id="aWrap">
+            <!-- Main content of home -->
+                <main>
+                    <!-- Types of apps section -->
+                    <nav id="appTypesContainer">
+                        <h2>Projects!</h2>
+                        <div>
+                            <section class="appType">
+                                <a href="">
+                                    <h3>Resume Projects</h3>
+                                </a>
+                            </section>
+                            <section class="appType">
+                                <a href="">
+                                <h3>By the Book!<br>Projects from Book</h3>
+                                </a>
+                            </section>
+                            <section class="appType">
+                                <a href="">
+                                    <h3>Personal Projects</h3>
+                                </a>
+                            </section>
+                        </div>
+                    </nav>
+
+                    <hr>    
+
+                    <!-- Game link grid -->
+                    <div class="gamesContainer">    <!-- Change to be called appsContainer-->
+                        <!-- Maybe make a sorting system with all app data in one json, and a type array. Each app could have 1-3 types, 
+                            to be sorted into apps(rename this; it is confusing), projects, and/or games. 
+                            That way, json has fewer files and less redundancy. And I get to make the sorting module/method/function. -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <!-- Site Foot -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+<!-- Temporary script location to design page,
+then adjust AppPage object in the future,
+and eventually move entirely to appPageScript.js and objects.js-->
+<script defer>
+    // set sectionGrid to have two sides
+    let sectionGrid = document.getElementById("sectionGrid");
+    console.log("got section grid");
+    sectionGrid.style.gridTemplateColumns = "1fr 5.5fr";
+</script>
 </body>
 </html>

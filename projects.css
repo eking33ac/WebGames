@@ -1,0 +1,18 @@
+.stickerBtn {
+
+}
+
+.stickerBtnDiv {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: ;
+}
+
+.stickerBtn a {
+    text-align: center;
+    text-decoration: none; /* remove underline from link */
+}
+.appType a:link {color: darkblue}
+.appType a:hover {color: darkblue}
+.appType a:visited {color: darkblue}
+.appType a:active {color: darkblue}

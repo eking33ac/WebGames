@@ -70,7 +70,7 @@ if (document.URL.includes("apps.html")) {
 }
 
 // if the page is/includes projects.html
-if (document.URL.includes("projects.html")) {
+/* if (document.URL.includes("projects.html")) {
     // create json HTML
     jsonAppText = `[
         {
@@ -91,4 +91,4 @@ if (document.URL.includes("projects.html")) {
     const projectsPage = new AppPage("project", headerName, headerLink, headerId, navNames, navLinks, navId, footLinks, footNames, "", jsonAppText)
     // Fill out the whole page
     projectsPage.Configure("gamesContainer", 0, "gameBox");
-}
+}*/

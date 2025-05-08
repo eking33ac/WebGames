@@ -1,21 +1,8 @@
 "use strict"; // use strict js
 
 
-
 /* There are two points over each other. I think this is my initial userLocat changing with the getPos, but there is a marker for both.
 I also want them to say A and B on the map, matching the instructions. */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
